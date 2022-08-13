@@ -1,0 +1,6 @@
+1-how i can make the main_page_ for_ receptionist stay if i open any another window 
+2- when i do checkout before leaving date the system must count the realy days i stay in the hotel not all days i booking for .
+3- if i open notmain  windows from anthor  not main windows when i click to back button return me to the first notmain windows not to main windows .
+3- make generate bill window > done 
+4- add price text boxes to addroom 
+5- try catch 

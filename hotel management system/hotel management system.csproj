@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73DB73C6-8540-46E2-A4C3-9C67BF0F3A6D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>hotel_management_system</RootNamespace>
+    <AssemblyName>hotel management system</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.25.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accountant\addemployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountant\addemployee.Designer.cs">
+      <DependentUpon>addemployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="accountant\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountant\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="accountant\main_page_for_accountant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accountant\main_page_for_accountant.Designer.cs">
+      <DependentUpon>main_page_for_accountant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="connection.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mintanince\addroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mintanince\addroom.Designer.cs">
+      <DependentUpon>addroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receptionist\avilable_room.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist\avilable_room.Designer.cs">
+      <DependentUpon>avilable_room.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionist\bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist\bill.Designer.cs">
+      <DependentUpon>bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionist\checkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist\checkout.Designer.cs">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionist\checkroom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist\checkroom.Designer.cs">
+      <DependentUpon>checkroom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionist\check_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist\check_in.Designer.cs">
+      <DependentUpon>check_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionist\complain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist\complain.Designer.cs">
+      <DependentUpon>complain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionist\mian_page_for_receptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist\mian_page_for_receptionist.Designer.cs">
+      <DependentUpon>mian_page_for_receptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionist\out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist\out.Designer.cs">
+      <DependentUpon>out.cs</DependentUpon>
+    </Compile>
+    <Compile Include="receptionist\search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionist\search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mintanince\update_price.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mintanince\update_price.Designer.cs">
+      <DependentUpon>update_price.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="accountant\addemployee.resx">
+      <DependentUpon>addemployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountant\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="accountant\main_page_for_accountant.resx">
+      <DependentUpon>main_page_for_accountant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mintanince\addroom.resx">
+      <DependentUpon>addroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="receptionist\avilable_room.resx">
+      <DependentUpon>avilable_room.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionist\bill.resx">
+      <DependentUpon>bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionist\checkout.resx">
+      <DependentUpon>checkout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionist\checkroom.resx">
+      <DependentUpon>checkroom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionist\check_in.resx">
+      <DependentUpon>check_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionist\complain.resx">
+      <DependentUpon>complain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionist\mian_page_for_receptionist.resx">
+      <DependentUpon>mian_page_for_receptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionist\out.resx">
+      <DependentUpon>out.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="receptionist\search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mintanince\update_price.resx">
+      <DependentUpon>update_price.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
